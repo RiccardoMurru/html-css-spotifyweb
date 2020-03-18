@@ -22,10 +22,15 @@ body {
 .color-gray {
     color: #666;
 }
+
 .unstyled-list {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
 
 /* LAYOUT */
@@ -127,8 +132,18 @@ body {
     left: 0;
     width: 100%;
     height: 100px;
-    background: rgba(200, 200, 200, .3);
+    background: rgba(0, 0, 0, .7);
     z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.upgrade-button {
+    padding: 10px 30px;
+    border: 1px solid #666;
+    border-radius: 20px;
+    margin-right: 20px;
 }
 
 /* Scrollable content */
@@ -140,13 +155,44 @@ body {
     height: 100%;
     overflow-y: auto;
     padding: 110px 20px 20px;
-    background: #666;
+    background: #141921;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list a {
+    padding: 10px;
 }
 /* Category */
 .main-content .category {
-    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content .category .album img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px 10px 20px 0;
+}
+
+.album .album-title {
+    font-size: 12px;
+}
+
+.album .artist {
+    font-size: 10px;
+}
 /* Player */
 .bottom-player {
     height: 100px;
