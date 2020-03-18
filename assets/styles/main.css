@@ -1,0 +1,82 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    background: #000;
+}
+
+/* LAYOUT */
+
+/* App */
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Main window */
+.main-window {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    background: #333;
+
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+}
+
+/* Main content */
+.main-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Top bar */
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(200, 200, 200, .3);
+    z-index: 1;
+}
+
+/* Scrollable content */
+.scrollable-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 110px 20px 20px;
+}
+/* Category */
+.main-content .category {
+    height: 500px;
+}
+
+/* Player */
+.bottom-player {
+    height: 100px;
+    background: #444;
+}
+
+
