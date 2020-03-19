@@ -13,12 +13,17 @@
         <!-- Main window -->
         <main class="main-window">
             <!-- Sidebar -->
-            <aside class="sidebar">
+            <aside class="sidebar sidebar-small-devices">
                 <div class="sidebar-nav">
-                    <img class="logo" src="assets/img/logo.svg" alt="Spotify Logo">
-                    
+                    <div class="sidebar-nav-small-devices hidden-large-devices">
+                        <img src="assets/img/logo-small.svg" alt="logo">
+                        <img src="assets/img/home.svg" alt="home">
+                        <img src="assets/img/search.svg" alt="search">
+                        <img src="assets/img/libreria.svg" alt="library">
+                    </div>
+                    <img class="logo hidden-small-devices" src="assets/img/logo.svg" alt="Spotify Logo">
                     <!-- Nav list -->
-                    <ul class="unstyled-list nav-list">
+                    <ul class="unstyled-list nav-list hidden-small-devices">
                         <li>
                             <a class="unstyled-link color-gray" href="#"><img src="assets/img/home.svg" alt="Home">Home</a>
                         </li>
@@ -31,8 +36,8 @@
                     </ul>
 
                     <!-- Playlist -->
-                    <h2>PLAYLIST</h2>
-                    <ul class="unstyled-list playlist">
+                    <h2 class="hidden-small-devices">PLAYLIST</h2>
+                    <ul class="unstyled-list playlist hidden-small-devices">
                         <li>
                             <a href="#" class="unstyled-link color-gray"><i class="far fa-plus-square"></i>Crea Playlist</a>
                         </li>
@@ -56,9 +61,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="sidebar-account">
+                <div class="sidebar-account hidden-small-devices">
                     <a href="#" class="unstyled-link color-gray"><i class="far fa-arrow-alt-circle-down"></i>Installa l'app</a>
                     <a href="#" class="unstyled-link color-white"><i class="far fa-user-circle"></i>Riccardo</a>
+                </div>
+                <div class="sidebar-account-small-devices hidden-large-devices">
+                    <a href="#" class="unstyled-link color-gray"><i class="far fa-arrow-alt-circle-down"></i></a>
+                    <a href="#" class="unstyled-link color-white"><i class="far fa-user-circle"></i></a>
                 </div>
             </aside>
     
@@ -157,7 +166,45 @@
 
         <!-- Bottom Player -->
         <footer class="bottom-player">
-           player
+           <div class="album-preview">
+                <img src="assets/img/silentshout.jpg" alt="silent shout">
+                <div class="album-preview-info">
+                    <span class="album-title">Silent Shout</span>
+                    <span class="artist color-gray">The Knife</span>
+                </div>
+                <div class="album-preview-icons">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+           </div>
+
+           <div class="player-commands">
+                <div class="player-commands-buttons">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <div class="player-commands-bar">
+                    <span class="time color-gray">0:36</span>
+                    <div class="song-bar">
+                        &nbsp;
+                    </div>
+                    <span class="time color-gray">5:25</span>
+                </div>
+           </div>
+
+           <div class="volume-commands">
+               <div class="volume-icons">
+                    <i class="fas fa-sliders-h"></i>
+                    <i class="fas fa-desktop"></i>
+                    <i class="fas fa-volume-up"></i>
+               </div>
+               <div class="volume-bar">
+                   &nbsp;
+               </div>
+           </div>
         </footer>
     </div>
 </body>
