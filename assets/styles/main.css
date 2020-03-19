@@ -33,6 +33,10 @@ body {
     text-transform: uppercase;
 }
 
+.mg-btm30 {
+    margin-bottom: 30px;
+}
+
 /* LAYOUT */
 
 /* App */
@@ -186,6 +190,9 @@ body {
     margin: 20px 10px 20px 0;
 }
 
+.main-content .category.popular-artists img {
+    border-radius: 50%;
+}
 .album .album-title {
     font-size: 12px;
 }
@@ -193,6 +200,8 @@ body {
 .album .artist {
     font-size: 10px;
 }
+
+
 /* Player */
 .bottom-player {
     height: 100px;
