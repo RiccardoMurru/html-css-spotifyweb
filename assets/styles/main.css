@@ -106,6 +106,10 @@ body {
     vertical-align: middle;
 }
 
+.sidebar .sidebar-nav .nav-list li:hover {
+    border-left: 1px solid #1db954;
+}
+
 .sidebar .sidebar-nav h2 {
     font-size: 18px;
     margin: 20px 10px 0;
@@ -195,8 +199,14 @@ body {
 }
 
 .menu-list a {
+    text-align: center;
     padding: 10px;
 }
+
+.scrollable-content .menu-list  a:hover {
+    border-bottom: 1px solid #1db954;
+}
+
 /* Category */
 .main-content .category {
     display: flex;
@@ -205,21 +215,51 @@ body {
 }
 
 .album {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main-content .category .album img{
+.main-content .category .album img {
+    position: relative;
     width: 200px;
     height: 200px;
     object-fit: cover;
     margin: 20px 10px 20px 0;
 }
 
+/* Overlay */
+
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: rgba(100, 100, 100, .3);
+    z-index: 1;
+    font-size: 50px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay.overlay-border-radius {
+    border-radius: 50%;
+}
+
 .main-content .category.popular-artists img {
     border-radius: 50%;
 }
+
 .album .album-title {
     font-size: 12px;
 }
@@ -302,7 +342,7 @@ body {
     align-content: center;
 }
 
-.volume-commands i{
+.volume-commands i {
     padding: 0 10px;
 }
 
@@ -348,6 +388,3 @@ body {
         width: 300px;
     }
 }
-
-
-
